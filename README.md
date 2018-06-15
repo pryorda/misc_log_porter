@@ -21,7 +21,7 @@ docker volume rm syslog-persist
 #### Usage
 To run this image with with persistent data, base_dir, and log_pattern, run the following: 
 ```
-docker run -d -v ${PWD}/test:/var/log/test -e BASE_DIR=/var/log/test -e LOG_PATTERN='*log' -e RECURSIVE=no -v syslog-persist:/var/lib/syslog-ng/ misc_log_porter
+docker run -d -v ${PWD}/test:/var/log/test -e BASE_DIR=/var/log/test -e LOG_PATTERN='*log' -e RECURSIVE=no -v syslog-persist:/var/lib/syslog-ng/ pryorda/misc_log_porter
 ```
 #### Environment Variables
 | varible      | default  | description                                      |
